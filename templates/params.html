@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block saturs %}
+
+<h1>This is params</h1>
+<p></p>
+{{ args }}
+
+{% for key in args %}
+  <p>{{ key }}</p>
+{% endfor %}
+{% endblock %}

@@ -8,21 +8,27 @@
     <header>
       <div class='container'>
         <nav>
-        <ul class='menu'>
-          <li><a href = '/home'>Home</a></li>
-          <li><a href = '/about'>About</a></li>
-          <li><a href = '/contact'>Contact</a></li>
-        </nav>
-      
-      </div>
-    
-    </header>
+          <ul class='menu'>
+            <li {% if active_page == 'home' %}
+                  class="active"
+            {% endif %}><a href="/home">Home</a></li>
+            <li {% if active_page == 'about' %}
+                  class="active"
+            {% endif %}><a href="/about">About</a></li>
+            <li {% if active_page == 'contact' %}
+                  class="active"
+            {% endif %}><a href="/contact">Contact</a></li>
+            <li {% if active_page == 'params' %}
+                  class="active"
+            {% endif %}><a href="/params">Params</a></li>
+        </ul>
+      </nav>
+    </div>  
+  </header>
   <div class = 'container'>
   {% block saturs %}
 
   {% endblock %}  
   </div>
-
   </body>
-
 </html>
