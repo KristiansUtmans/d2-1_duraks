@@ -1,5 +1,7 @@
 p {
   color: magenta;
   font-size: 22px;
-
+}
+.active > a{
+  color:145, 12, 12;
 }
