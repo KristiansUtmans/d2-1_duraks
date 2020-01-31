@@ -2,8 +2,10 @@
 
 ### Author - Kristians Utmans
 
-- 1.
-- aaa
-- bbb
+- This
+- is
+- a school
+- project.
 
 :smile:
+:frowning:
