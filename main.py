@@ -22,9 +22,9 @@ def contact():
 def params():
   return render_template('params.html', args = request.args.to_dict())
 
-@app.route('/post')
+@app.route('/post', methods = ['POST'])
 def post():
-  return request.headers
+  return request.get_json()
 
 
 
